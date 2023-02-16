@@ -1,0 +1,59 @@
+@media screen and (min-width: 768px) {
+  .container {
+    width: 766px;
+  }
+
+  /*Шапка*/
+
+  .container.navigation {
+    display: block;
+  }
+
+  .logo {
+    margin-right: 123px;
+  }
+
+  .navigation-list {
+    display: flex;
+    gap: 40px;
+  }
+
+  .page-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .address-list {
+    display: flex;
+    margin-left: 118px;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .address-item {
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.04em;
+  }
+
+  .mobile-menu-open {
+    display: none;
+  }
+
+  /*Герой*/
+  .hero {
+    width: 768px;
+    height: auto;
+    padding-top: 112px;
+    padding-bottom: 108px;
+  }
+
+  .hero-title {
+    max-width: 496px;
+    margin-bottom: 40px;
+
+    font-size: 56px;
+    line-height: 1.07;
+  }
+}

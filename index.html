@@ -17,54 +17,70 @@
     />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/mobile.css" />
+    <link rel="stylesheet" href="./css/tab.css" />
+    <link rel="stylesheet" href="./css/dekstop.css" />
   </head>
   <body>
     <!--Шапка профиля-->
     <header class="page-header">
       <div class="container navigation">
-        <nav class="main-navigation">
-          <a href="./index.html" class="logo link"
-            ><span class="logo-web">Web</span>Studio
-          </a>
-          <ul class="navigation-list list">
-            <li class="navigation-item">
-              <a href="./index.html" class="navigation-item-link link studio"
-                >Studio</a
-              >
-            </li>
-            <li class="navigation-item">
-              <a href="./portfolio.html" class="navigation-item-link link"
-                >Portfolio</a
-              >
-            </li>
-            <li class="navigation-item">
-              <a href="#" class="navigation-item-link link">Contacts</a>
-            </li>
-          </ul>
-        </nav>
+        <div class="page-navigation">
+          <nav class="main-navigation">
+            <a href="./index.html" class="logo link"
+              ><span class="logo-web">Web</span>Studio
+            </a>
+            <ul class="navigation-list list">
+              <li class="navigation-item">
+                <a href="./index.html" class="navigation-item-link link studio"
+                  >Studio</a
+                >
+              </li>
+              <li class="navigation-item">
+                <a href="./portfolio.html" class="navigation-item-link link"
+                  >Portfolio</a
+                >
+              </li>
+              <li class="navigation-item">
+                <a href="#" class="navigation-item-link link">Contacts</a>
+              </li>
+            </ul>
+          </nav>
 
-        <address class="address">
-          <ul class="address-list list">
-            <li class="address-item">
-              <a href="mailto:info@devstudio.com" class="address-item-link link"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li class="address-item">
-              <a href="tel:+110001111111" class="address-item-link link"
-                >+11 (000) 111-11-11</a
-              >
-            </li>
-          </ul>
-        </address>
+          <address class="address">
+            <ul class="address-list list">
+              <li class="address-item">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="address-item-link link"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="address-item">
+                <a href="tel:+110001111111" class="address-item-link link"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+
+        <div class="mobile-menu-hamburger">
+          <button type="button" class="mobile-menu-open">
+            <svg class="mobile-menu-hamburger-icon" width="32" height="22">
+              <use href="./images/icons.svg#icon-menu-hamburger"></use>
+            </svg>
+          </button>
+        </div>
       </div>
     </header>
 
     <main>
       <!--Секция герой-->
       <section class="section hero">
-            <h1 class="hero-title">Effective Solutions for Your Business</h1>
-            <button type="button" class="hero-btn" data-modal-open>Order Service</button>
+        <h1 class="hero-title">Effective Solutions for Your Business</h1>
+        <button type="button" class="hero-btn" data-modal-open>
+          Order Service
+        </button>
       </section>
 
       <!--Особенности-->
@@ -89,7 +105,7 @@
                 <svg class="icon-clock" width="64px" height="64px">
                   <use href="./images/icons.svg#icon-clock"></use>
                 </svg>
-              </div> 
+              </div>
               <h3 class="features-item-title">Punctuality</h3>
               <p class="features-item-text">
                 Bring the key message to the brand's audience for the best price
@@ -110,7 +126,7 @@
             </li>
             <li class="features-item">
               <div class="features-item-icon">
-                <svg class="icon-astronaut" width="64px" height="64px"> 
+                <svg class="icon-astronaut" width="64px" height="64px">
                   <use href="./images/icons.svg#icon-astronaut"></use>
                 </svg>
               </div>
@@ -126,7 +142,7 @@
 
       <!--Чем мы занимаемся-->
 
-      <section class="section work">
+      <!-- <section class="section work">
         <div class="container work">
           <h2 class="work-title">What are we doing</h2>
           <ul class="work-list list">
@@ -156,11 +172,11 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!--Наша команда-->
 
-      <section class="section team">
+      <!-- <section class="section team">
         <div class="container team">
         <h2 class="team-title">Our Team</h2>
         <ul class="team-list list">
@@ -334,11 +350,11 @@
             </div>
           </li>
         </ul>
-      </section>
+      </section> -->
 
       <!--Клиенты-->
 
-      <section class="section customers">
+      <!-- <section class="section customers">
         <div class="container customers">
 
           <h2 class="customers-title">Customers</h2>
@@ -388,12 +404,11 @@
             </li>
           </ul>
         </div>
-      </section>
-  
+      </section> -->
     </main>
 
     <!--Подвал-->
-    <footer class="page-footer">
+    <!-- <footer class="page-footer">
       <div class="container footer">
 
         <div class="footer-block">
@@ -510,9 +525,8 @@
         
         </form>
       </div>
-    </div>
+    </div> -->
 
-    <script src="./js/modal.js"></script>
-
+    <!-- <script src="./js/modal.js"></script> -->
   </body>
 </html>

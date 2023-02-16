@@ -1,0 +1,30 @@
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1158px;
+  }
+  /*Шапка*/
+
+  .address-list {
+    margin-left: 332px;
+  }
+
+  .mobile-menu-open {
+    display: none;
+  }
+
+  /*Герой*/
+  .hero {
+    width: 100%;
+    height: auto;
+    padding-top: 112px;
+    padding-bottom: 108px;
+  }
+
+  .hero-title {
+    max-width: 496px;
+    margin-bottom: 40px;
+
+    font-size: 56px;
+    line-height: 1.07;
+  }
+}
