@@ -74,7 +74,6 @@ body {
 }
 
 .header-logo {
-  margin-right: 250px;
   padding-top: 24px;
   padding-bottom: 24px;
 }
@@ -167,7 +166,20 @@ body {
   color: var(--accent-color);
 }
 
-.mobile-menu-hamburger {
+/*Мобильное меню*/
+
+.mobile-menu {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: bisque;
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
 
 .mobile-menu-open {
@@ -178,8 +190,85 @@ body {
   padding: 0;
 }
 
+.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
 .mobile-menu-hamburger-icon {
   stroke: #2e2f42;
+}
+
+.mobile-menu-container {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: auto;
+  overflow-y: auto;
+
+  position: relative;
+  padding-top: 24px;
+  padding-left: 25px;
+  padding-bottom: 40px;
+}
+
+.mobile-menu-close-btn {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 24px;
+  right: 15px;
+  line-height: 0;
+  color: #000000;
+  background-color: #e7e9fc;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  transition: color var(--transition-duration) var(--cubic-bezier),
+    background-color var(--transition-duration) var(--cubic-bezier);
+}
+.mobile-navigation {
+  margin-top: 32px;
+  margin-bottom: 284px;
+}
+.mobile-navigation-link {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  color: var(--main-text-bcg-color);
+}
+.mobile-navigation-link.contacts {
+  color: var(--accent-color);
+}
+.mobile-navigation-item:not(:last-child) {
+  margin-bottom: 40px;
+}
+.mobile-menu-address-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.mobile-menu-tel-link {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 1.11;
+  color: var(--accent-color);
+}
+.mobile-menu-mail-link {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--secondary-text-color);
+}
+.mobile-menu-social-list {
+  display: flex;
+  margin-top: 48px;
+  gap: 56px;
+}
+.team-social-link.mobile {
+  padding: 8px;
 }
 
 /*Секция герой*/
@@ -195,7 +284,7 @@ body {
     ),
     url(../images/hero-image.jpg);
   height: auto;
-  width: 426px;
+  max-width: 426px;
   text-align: center;
   color: var(--white-text-color);
 }
@@ -381,7 +470,7 @@ body {
 }
 
 .container.customers {
-  width: 428px;
+  max-width: 428px;
 }
 
 .customers-title {
@@ -509,7 +598,6 @@ body {
 
 .block-subscribe {
   display: flex;
-  /* margin-left: 80px; */
 }
 
 .label-email-subscribe {
@@ -537,7 +625,7 @@ body {
 
   align-items: center;
 
-  width: 398px;
+  width: 300px;
   height: 40px;
 
   font-size: 12px;
@@ -584,8 +672,221 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
+/*Форма в модальном окне*/
+
+.modal-title {
+  text-align: center;
+  margin-bottom: 14px;
+  font-weight: 500;
+}
+
+.modal-form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 24px;
+  margin-right: 24px;
+
+  outline: 1px solid tomato;
+}
+
+.common-label {
+  display: block;
+  margin-bottom: 4px;
+
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+}
+
+.block-input-name {
+  position: relative;
+}
+
+.input-name-user {
+  transition: border-color var(--transition-duration) var(--cubic-bezier);
+}
+
+.input-name-icon {
+  position: absolute;
+  top: 50%;
+  left: 19px;
+  transform: translateY(-50%);
+
+  fill: var(--main-background-color);
+  transition: fill var(--transition-duration) var(--cubic-bezier);
+}
+
+.input-name-user:hover,
+.input-name-user:focus,
+.input-name-user:hover + .input-name-icon,
+.input-name-user:focus + .input-name-icon {
+  fill: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.block-input-tel {
+  display: block;
+  position: relative;
+}
+
+.input-tel-user {
+  transition: border-color var(--transition-duration) var(--cubic-bezier);
+}
+
+.input-tel-icon {
+  position: absolute;
+  top: 50%;
+  left: 19px;
+  transform: translateY(-50%);
+
+  fill: var(--main-background-color);
+  transition: fill var(--transition-duration) var(--cubic-bezier);
+}
+
+.input-tel-user:hover,
+.input-tel-user:focus,
+.input-tel-user:hover + .input-tel-icon,
+.input-tel-user:focus + .input-tel-icon {
+  fill: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.block-input-email {
+  position: relative;
+}
+
+.input-email-user {
+  transition: border-color var(--transition-duration) var(--cubic-bezier);
+}
+
+.input-email-icon {
+  position: absolute;
+  top: 50%;
+  left: 18px;
+  transform: translateY(-50%);
+
+  fill: var(--main-background-color);
+  transition: fill var(--transition-duration) var(--cubic-bezier);
+}
+
+.input-email-user:hover,
+.input-email-user:focus,
+.input-email-user:hover + .input-email-icon,
+.input-email-user:focus + .input-email-icon {
+  fill: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.common-input {
+  padding-left: 38px;
+  width: 100%;
+  height: 40px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline: none;
+}
+
+.block-input:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.modal-comment {
+  padding: 8px 16px;
+  width: 360px;
+  height: 120px;
+  resize: none;
+
+  transition: border-color var(--transition-duration) var(--cubic-bezier);
+}
+
+.modal-comment::placeholder {
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.modal-comment:hover,
+.modal-comment:focus {
+  border-color: var(--accent-color);
+}
+
+/*Кастомный чекбокс в модальном окне*/
+
+.check-text {
+  display: flex;
+  margin-top: 16px;
+  margin-bottom: 24px;
+
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+
+  color: #757575;
+}
+
+.check-text::before {
+  content: "";
+  display: flex;
+  width: 16px;
+  height: 16px;
+  border: 1.25px solid #2e2f42;
+  border-radius: 2px;
+  margin-right: 8px;
+  transition: background-color var(--transition-duration) var(--cubic-bezier);
+}
+
+.modal-check:checked + .check-text::before {
+  background-color: #404bbf;
+  border: none;
+  background-image: url(../images/check.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.modal-check:focus + .check-text::before {
+  outline: auto;
+}
+
+/*Кнопка*/
+
+.btn-send {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 16px 32px;
+
+  width: 169px;
+  height: 56px;
+
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  background-color: #4d5ae5;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: background-color var(--transition-duration) var(--cubic-bezier),
+    box-shadow var(--transition-duration) var(--cubic-bezier);
+  outline: none;
+}
+
+.btn-send:hover,
+.btn-send:focus {
+  background-color: #404bbf;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
 @media screen and (min-width: 480px) {
   .container {
     width: 426px;
+  }
+
+  .input-email-subscripe {
+    width: 398px;
   }
 }
