@@ -75,4 +75,16 @@
   .section.work {
     display: none;
   }
+
+  /*Customers*/
+
+  .customers-logo-list {
+    column-gap: 24px;
+  }
+
+  .customers-logo-item {
+    max-width: 168px;
+    height: 88px;
+    flex-basis: calc((100% - 24px * 2) / 3);
+  }
 }

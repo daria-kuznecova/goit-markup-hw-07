@@ -87,4 +87,10 @@
     max-width: 100%;
     height: auto;
   }
+
+  /*Customers*/
+
+  .customers-logo-item {
+    flex-basis: calc((100% - 24px * 5) / 6);
+  }
 }
