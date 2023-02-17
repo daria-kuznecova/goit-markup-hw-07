@@ -18,7 +18,7 @@
 
   /*Герой*/
   .hero {
-    width: 100%;
+    max-width: 100%;
     height: auto;
     padding-top: 112px;
     padding-bottom: 108px;

@@ -43,7 +43,7 @@
 
   /*Герой*/
   .hero {
-    width: 768px;
+    max-width: 768px;
     height: auto;
     padding-top: 112px;
     padding-bottom: 108px;
