@@ -9,6 +9,12 @@
     display: block;
   }
 
+  .page-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
   .logo {
     margin-right: 123px;
   }
@@ -16,12 +22,6 @@
   .navigation-list {
     display: flex;
     gap: 40px;
-  }
-
-  .page-navigation {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
   }
 
   .address-list {
@@ -76,15 +76,68 @@
     display: none;
   }
 
+  /*Наша команда*/
+
+  .section.team {
+    padding-bottom: 104px;
+  }
+
+  .container.team {
+    width: 552px;
+  }
+
+  .team-list {
+    column-gap: 24px;
+    row-gap: 64px;
+  }
+
+  .team-item {
+    width: calc((100% - 24px) / 2);
+  }
+
   /*Customers*/
+
+  .container.customers {
+    width: 552px;
+  }
 
   .customers-logo-list {
     column-gap: 24px;
   }
 
   .customers-logo-item {
-    max-width: 168px;
-    height: 88px;
-    flex-basis: calc((100% - 24px * 2) / 3);
+    width: calc((100% - 24px * 2) / 3);
+  }
+
+  /*Подвал*/
+
+  .container.footer {
+    width: 552px;
+  }
+
+  .footer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: start;
+  }
+
+  .footer-block-social {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 24px;
+  }
+
+  .row-block-subscribe {
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  .label-email-subscribe {
+    text-align: start;
+    margin-top: 72px;
+  }
+
+  .input-email-subscripe {
+    width: 264px;
   }
 }

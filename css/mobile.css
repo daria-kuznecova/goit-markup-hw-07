@@ -73,10 +73,13 @@ body {
   justify-content: space-between;
 }
 
-.logo {
-  margin-right: 258px;
+.header-logo {
+  margin-right: 250px;
   padding-top: 24px;
   padding-bottom: 24px;
+}
+
+.logo {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -235,6 +238,7 @@ body {
 /*Особенности*/
 .section.features {
   padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 .visually-hidden {
@@ -252,7 +256,6 @@ body {
 
 .features-list {
   display: flex;
-  padding-bottom: 96px;
   flex-wrap: wrap;
   row-gap: 72px;
 }
@@ -284,6 +287,7 @@ body {
 
 .section.team {
   padding-top: 96px;
+  padding-bottom: 128px;
   background: var(--secondary-white-background-color);
 }
 
@@ -301,12 +305,11 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 24px;
+  gap: 72px;
 }
 
 .team-item {
-  margin-bottom: 72px;
-  flex-basis: calc((100% - 24px * 3) / 4);
+  /* flex-basis: calc((100% - 24px * 3) / 4); */
   background: var(--white-background-color);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -377,6 +380,10 @@ body {
   padding-bottom: 96px;
 }
 
+.container.customers {
+  width: 428px;
+}
+
 .customers-title {
   margin-bottom: 72px;
 
@@ -388,15 +395,14 @@ body {
 .customers-logo-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+
   column-gap: 16px;
   row-gap: 72px;
 }
 
 .customers-logo-item {
-  max-width: 190px;
   height: 88px;
-  flex-basis: calc((100% - 16px) / 2);
+  width: calc((100% - 16px) / 2);
 }
 
 .customers-logo-link {
@@ -431,14 +437,13 @@ body {
 
 .footer {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .footer-block {
+  text-align: center;
   width: 268px;
-  margin-right: auto;
-  margin-left: auto;
 }
 
 .footer-logo {
@@ -446,12 +451,17 @@ body {
 }
 
 .footer-text {
+  text-align: start;
   margin-top: 16px;
   color: var(--footer-text-color);
 }
 
 .footer-block-social {
-  justify-content: start;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 72px;
+  margin-top: 72px;
 }
 
 .footer-text-social {
@@ -499,11 +509,12 @@ body {
 
 .block-subscribe {
   display: flex;
-  margin-left: 80px;
+  /* margin-left: 80px; */
 }
 
 .label-email-subscribe {
   display: block;
+  text-align: center;
   margin-bottom: 16px;
 
   font-weight: 500;
@@ -513,17 +524,20 @@ body {
 
 .row-block-subscribe {
   display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
 }
 
 .input-email-subscripe {
   display: block;
   padding: 8px 16px;
+  margin-left: 0;
+  margin-right: 0;
 
   align-items: center;
 
-  width: 264px;
+  width: 398px;
   height: 40px;
 
   font-size: 12px;
