@@ -176,6 +176,11 @@ body {
   left: 0;
   z-index: 1;
   background-color: #ffffff;
+  transition: transform var(--transition-duration) var(--cubic-bezier);
+}
+
+.mobile-menu.is-hidden {
+  transform: translate(-50%, -50%) scaleY(0);
 }
 
 .mobile-menu-open {
@@ -219,6 +224,18 @@ body {
   transition: color var(--transition-duration) var(--cubic-bezier),
     background-color var(--transition-duration) var(--cubic-bezier);
 }
+
+.mobile-menu-close-icon {
+  fill: currentColor;
+}
+
+.mobile-menu-close-btn:hover,
+.mobile-menu-close-btn:focus {
+  color: #ffffff;
+  background-color: #404bbf;
+  cursor: pointer;
+}
+
 .mobile-navigation {
   margin-top: 32px;
   margin-bottom: 284px;
