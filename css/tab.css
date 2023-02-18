@@ -43,10 +43,21 @@
 
   /*Герой*/
   .hero {
-    max-width: 768px;
+    max-width: 1199px;
     height: auto;
     padding-top: 112px;
     padding-bottom: 108px;
+    background-image: var(--linear-gradient-hero),
+      url(../images/dekstop-hero.jpg);
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .hero {
+      background-image: var(--linear-gradient-hero),
+        url(../images/dekstop-hero@2x.jpg);
+    }
   }
 
   .hero-title {
