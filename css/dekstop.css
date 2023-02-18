@@ -136,4 +136,10 @@
   .label-email-subscribe {
     margin-top: 0;
   }
+
+  /*Модальное окно*/
+
+  .modal {
+    height: 584px;
+  }
 }

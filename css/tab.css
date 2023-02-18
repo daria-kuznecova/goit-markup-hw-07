@@ -140,4 +140,10 @@
   .input-email-subscripe {
     width: 264px;
   }
+
+  /*Модальное окно*/
+
+  .modal {
+    width: 408px;
+  }
 }
