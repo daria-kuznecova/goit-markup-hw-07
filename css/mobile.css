@@ -197,6 +197,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   margin-bottom: auto;
+  overflow-y: auto;
 
   position: relative;
   padding-top: 24px;
@@ -668,6 +669,8 @@ body {
   top: 0;
   width: 100%;
   height: 100%;
+  overflow: scroll;
+
   background-color: rgba(46, 47, 66, 0.4);
   transition: opacity var(--transition-duration) var(--cubic-bezier),
     visibility var(--transition-duration) var(--cubic-bezier);
