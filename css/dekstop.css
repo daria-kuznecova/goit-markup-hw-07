@@ -8,8 +8,20 @@
   }
   /*Шапка*/
 
+  .logo {
+    margin-right: 76px;
+  }
+
   .address-list {
+    flex-direction: row;
     margin-left: 332px;
+    gap: 40px;
+  }
+
+  .address-item {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
   }
 
   .mobile-menu-open {
@@ -18,7 +30,7 @@
 
   /*Герой*/
   .hero {
-    max-width: 100%;
+    max-width: 1440px;
     height: auto;
     padding-top: 112px;
     padding-bottom: 108px;
