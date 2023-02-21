@@ -31,9 +31,8 @@
   /*Герой*/
   .hero {
     max-width: 1440px;
-    height: auto;
-    padding-top: 112px;
-    padding-bottom: 108px;
+    padding-top: 188px;
+    padding-bottom: 188px;
     background-image: var(--linear-gradient-hero),
       url(../images/dekstop-hero.jpg);
   }
@@ -147,13 +146,14 @@
   }
 
   .footer-block {
-    margin-right: 120px;
+    font-size: 14px;
     text-align: start;
   }
 
   .footer-block-social {
     align-items: start;
     margin-right: 80px;
+    margin-left: 120px;
   }
 
   .label-email-subscribe {

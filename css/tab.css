@@ -132,10 +132,16 @@
     align-items: start;
   }
 
+  .footer-block {
+    width: 264px;
+    text-align: start;
+  }
+
   .footer-block-social {
     margin-top: 0;
     margin-bottom: 0;
     margin-left: 24px;
+    align-items: flex-start;
   }
 
   .row-block-subscribe {
