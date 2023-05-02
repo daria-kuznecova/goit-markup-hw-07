@@ -344,7 +344,7 @@ body {
 .hero-btn:hover,
 .hero-btn:focus {
   background-color: var(--filters-background-btn-icons-hover);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
   border-radius: 4px;
 }
 
@@ -726,8 +726,6 @@ body {
   overflow-y: scroll;
 }
 
-
-
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scaleY(0);
 }
@@ -997,5 +995,6 @@ body {
 
   .modal {
     width: 392px;
-  height: 586px;
+    height: 586px;
+  }
 }
